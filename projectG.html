@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Project T-shirt</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  </head>
+
+  <body id="page-top">
+    <!-- Navigation -->
+    <a class="menu-toggle rounded" href="#">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a class="js-scroll-trigger" href="#page-top">Tone-Shirt</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="index.html">Home</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#choose">Choose Color</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead d-flex">
+      <div id="login" class="container text-center my-auto">
+        <h1 class="mb-1">Tone-Shirt</h1>
+        <h3 class="mb-5">
+          <em>You can choose color your shirt</em>
+        </h3>
+
+        <div class="container">
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">login</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header"> 
+          <h4 class="modal-title text-left">LOGIN FORM</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          
+        </div>
+        <div class="modal-body">
+          <form>
+            username : <input type="text" name=""><br><br>
+            password : <input type="password" name="">
+          </form>
+        </div>
+
+
+
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Register</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+      <div class="overlay"></div>
+    </header>
+
+<!-- Callout -->
+    <div class="container w3-row-padding w3-padding-16" id="product">
+    <div class="w3-third w3-margin-bottom">
+      <img src="img/g1.jpg" alt="Norway" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Capitol 75th</h3>
+          <h6 class="w3-opacity">From 249฿</h6>
+        <button type="button" class="w3-button w3-block w3-black w3-margin-bottom " 
+        data-toggle="modal" data-target="#choose1"">Buy Now</button>
+  <!-- Modal -->
+  <div class="modal fade" id="choose1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header"> 
+          <h4 class="modal-title text-left">SHOPPING FORM</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>       
+        </div>
+        <div class="modal-body">
+          <form>
+             E-mail : <input id="shop" type="email" name="email"><br><br>
+           Address : <br><textarea id="shopA" rows="2" cols="25"></textarea><br><br>
+            Telephone : <input id="shopT" type="tel" name="Telephone"><br><br>
+            Size : <input id="shopS" type="text" name="Size" maxlength="1"><br><br>
+            Amount : <input id="shopN" type="number" name="Amount" min="0">
+          </form>
+        </div> 
+        <div class="modal-footer">
+          <button type="button" onclick="submitTobuy()" class="btn btn-default" data-dismiss="modal">Submit</button>
+          <button type="button" onclick="cancel()" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div></div>
+
+    <!--shirt2 -->
+    <div class="w3-third w3-margin-bottom">
+      <img src="img/g2.jpg" alt="Norway" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>KIDS TOMICA</h3>
+         <h6 class="w3-opacity">From 249฿</h6>
+        <button type="button" class="w3-button w3-block w3-black w3-margin-bottom " 
+        data-toggle="modal" data-target="#choose2"">Buy Now</button>
+  <!-- Modal -->
+  <div class="modal fade" id="choose2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header"> 
+          <h4 class="modal-title text-left">SHOPPING FORM</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>       
+        </div>
+        <div class="modal-body">
+          <form>
+             E-mail : <input id="shop2" type="email" name="email"><br><br>
+           Address : <br><textarea id="shopA2" rows="2" cols="25"></textarea><br><br>
+            Telephone : <input id="shopT2" type="tel" name="Telephone"><br><br>
+            Size : <input id="shopS2" type="text" name="Size" maxlength="1"><br><br>
+            Amount : <input id="shopN2" type="number" name="Amount" min="0">
+          </form>
+        </div> 
+        <div class="modal-footer">
+          <button type="button" onclick="submitTobuy()" class="btn btn-default" data-dismiss="modal">Submit</button>
+          <button type="button" onclick="cancel()" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div></div>
+      <!--shirt3-->
+    <div class="w3-third w3-margin-bottom">
+      <img src="img/g3.jpg" alt="Norway" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Boy Tomica</h3>
+        <h6 class="w3-opacity">From 249฿</h6>
+     <button type="button" class="w3-button w3-block w3-black w3-margin-bottom " 
+        data-toggle="modal" data-target="#choose3"">Buy Now</button>
+  <!-- Modal -->
+  <div class="modal fade" id="choose3" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header"> 
+          <h4 class="modal-title text-left">SHOPPING FORM</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>       
+        </div>
+        <div class="modal-body">
+          <form>
+             E-mail : <input id="shop3" type="email" name="email"><br><br>
+           Address : <br><textarea id="shopA3" rows="2" cols="25"></textarea><br><br>
+            Telephone : <input id="shopT3" type="tel" name="Telephone"><br><br>
+            Size : <input id="shopS3" type="text" name="Size" maxlength="1"><br><br>
+            Amount : <input id="shopN3" type="number" name="Amount" min="0">
+          </form>
+        </div> 
+        <div class="modal-footer">
+          <button type="button" onclick="submitTobuy()" class="btn btn-default" data-dismiss="modal">Submit</button>
+          <button type="button" onclick="cancel()" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div></div>
+  </div>
+
+    <!-- Portfolio -->
+    <section class="content-section" id="choose">
+      <div class="container">
+        <div class="content-section-heading text-center">
+          <h3 class="text-secondary mb-0">Product</h3>
+          <h2 class="mb-5">Choose Color</h2>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="projectY.html">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Yellow</h2>
+                  <p class="mb-0">A yellow look Funny</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/yellow-shirt.jpg" alt="" >
+            </a>
+          </div>
+
+ <div class="col-lg-6">
+            <a class="portfolio-item" href="projectG.html">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Green</h2>
+                  <p class="mb-0">A green look Natural</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/green-shirt.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="projectB.html">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Brown</h2>
+                  <p class="mb-0">A brown look Vintage</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/brown-shirt.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="projectW.html">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>White</h2>
+                  <p class="mb-0">A white look Simple</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/white-shirt.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="content-section bg-primary text-white">
+      <div class="container text-center">
+        <p></p>
+        <h2 class="mb-4">Thank for shopping</h2>
+        <!-- <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
+        <a href="#" class="btn btn-xl btn-dark">Look at Me!</a> -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center" id="contact">
+      <div class="container">
+        <ul class="list-inline mb-5">
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/natchanon.niwedtongrirk">
+              <i class="icon-social-facebook"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/romncn/">
+              <i class="icon-social-instagram"></i>
+            </a>
+          </li>
+          <!--<li class="list-inline-item">
+            <a class="social-link rounded-circle text-white" href="#">
+              <i class="icon-social-github"></i>
+            </a>
+          </li> -->
+        </ul>
+        <p class="text-muted small mb-0">Copyright &copy; Your Website 2018</p>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.min.js"></script>
+
+  </body>
+
+</html>
